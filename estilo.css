@@ -4,6 +4,10 @@ body {
     margin-right: 50px;
 }
 
+body {
+    max-width: 100%;
+}
+
 p {
     text-align: justify;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -42,11 +46,12 @@ h4 {
 
 .container1 {
     background-color: #c39f8b;
-    display: flex;
+    display: block;
     align-items: center;
     height: 40px;
     margin: 0px;
     padding: 0px;
+    
 }
 
 .container1:hover {
@@ -66,4 +71,38 @@ h4 {
 .nav-link:hover {
     background-color: #e9d7bc;
 }
+@include media-breakpoint-up(sm){
+    .custom-class {
+      display: block;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class 
+    display: none;
+
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    display: block;
+    max-width: 100%;
+    content: "phone"}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    display: none;
+    max-width: 100%;
+    content: "tablet"
+}
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+    display: block;
+    max-width: 100%;
+ };
+
+@media (min-width: 1200px) and (max-width: 1400px) { 
+    display: block;
+    max-width: 100px;
+ };
+
+@media (min-width: 1400px) { ... };
 
