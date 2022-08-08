@@ -71,20 +71,9 @@ h4 {
 .nav-link:hover {
     background-color: #e9d7bc;
 }
-@include media-breakpoint-up(sm){
-    .custom-class {
-      display: block;
-    }
-}
-
-@include media-breakpoint-up(sm) {
-    .custom-class 
-    display: none;
-
-}
 
 @media (min-width: 576px) and (max-width: 768px){
-    display: block;
+    display: none;
     max-width: 100%;
     content: "phone"}
 
